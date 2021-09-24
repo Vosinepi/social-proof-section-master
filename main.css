@@ -1,0 +1,81 @@
+:root {
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    line-height: 1;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h3 {
+    font: 500;
+}
+
+p {
+    font-weight: 400;
+}
+
+.background {
+    margin: auto;
+    width: 1440px;
+    background-image: 
+        url(images/bg-pattern-top-desktop.svg),
+        url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, right;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 40px 6px hsl(300, 43%, 22%);
+    border-radius: 20px; 
+}
+
+.social-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 500px;
+    padding: 10rem;
+    margin: 10% auto;
+    align-content: space-around;
+}
+
+.main {
+    width: 500px;
+    height: 150px;
+}
+
+.rateds {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    
+      
+}
+
+.rated {
+    background: var(--lightGrayishMagenta);
+    padding: 0.7rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    text-align: right;    
+}

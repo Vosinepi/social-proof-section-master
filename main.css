@@ -25,6 +25,9 @@ body {
 
 h1 {
     font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--veryDarkMagenta);
+    
 }
 
 h3 {
@@ -33,6 +36,8 @@ h3 {
 
 p {
     font-weight: 400;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .background {
@@ -41,7 +46,7 @@ p {
     background-image: 
         url(images/bg-pattern-top-desktop.svg),
         url(images/bg-pattern-bottom-desktop.svg);
-    background-position: top left, right;
+    background-position: top left, bottom right;
     background-repeat: no-repeat;
     box-shadow: 1px 1px 40px 6px hsl(300, 43%, 22%);
     border-radius: 20px; 
@@ -52,20 +57,33 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     width: 1440px;
-    height: 500px;
-    padding: 10rem;
-    margin: 10% auto;
+    height: 700px;
+    padding: 18rem 10rem 18rem 10rem;
+    margin: 7% auto;
     align-content: space-around;
 }
 
 .main {
-    width: 500px;
-    height: 150px;
+    width: 350px;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    
+}
+
+.main__title:hover {
+    color: var(--darkGrayishMagenta)
+}
+
+.para {
+    margin-top: 1rem;
+    width: 400px;
+    
 }
 
 .rateds {
     display: flex;
     flex-direction: column;
+    margin-left: 9.5rem;
     flex-wrap: wrap;
     width: 500px;
     
@@ -73,9 +91,178 @@ p {
 }
 
 .rated {
+    display: flex;
+    flex-direction: row;
     background: var(--lightGrayishMagenta);
-    padding: 0.7rem;
+    padding: 1rem;
     margin: 0.5rem;
     border-radius: 10px;
     text-align: right;    
+}
+
+.rate1 {
+    width: 500px;
+    transition: margin-left 1s;
+}
+
+.rate1:hover {
+    margin-left: 30px;
+}
+
+.rate2 {
+    margin-left: 30px;
+    width: 500px;
+    transition: margin-left 1s;
+}
+
+.rate2:hover {
+    margin-left: 55px;
+}
+
+.rate3  {
+    margin-left: 55px; 
+    width: 500px;
+    transition: margin-left 1s;
+}
+
+.rate3:hover {
+    margin-left: 80px;
+}
+
+.star {
+    
+    
+    padding-left: 0.5rem;
+   
+}
+
+.rate_testimoni {
+    color: var(--veryDarkMagenta);
+    margin-left: 3rem;
+}
+
+.testimonies {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.testimoni {
+    background-color: var(--veryDarkMagenta);
+    border-radius: 10px;
+    margin: 1rem;
+    height: 210px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: color 2s;
+}
+
+.autor2 { 
+    margin-top: 40px;
+}
+
+.autor3 {
+    margin-top: 60px;
+}
+
+.circleImg {
+    width: 3rem;
+    margin: 1rem 0rem 1rem 1rem;
+}
+
+.autor {
+    color: var(--white);
+    width: 200px;
+    margin-left: 1rem;
+    line-height: 1.5rem;
+}
+
+.resalt {
+    color: var(--darkGrayishMagenta)
+}
+
+.paragraph {
+    color: var(--lightGrayishMagenta);
+    padding: 1rem;
+}
+
+@media (max-width: 375px) {
+    .background {
+        display: flex;
+        width: 350px;
+        height: 1530px;
+        margin-top: 100px;
+        margin-bottom: 3rem;
+        background-image: 
+        url(images/bg-pattern-top-mobile.svg),
+        url(images/bg-pattern-bottom-mobile.svg);
+        background-position: top left, bottom right;
+        background-repeat: no-repeat;
+    }
+
+    .social-section {
+        flex-direction: column;
+        width: 350px;
+        flex-wrap: nowrap;
+        padding: 0px;
+        
+    }
+
+    .main {
+        width: 300px;
+        text-align: center;
+        align-self: center;
+        margin-left: 0px;
+        margin-bottom: 1rem;
+    }
+
+    .para {
+        width: 290px;
+    }
+
+    .rateds {
+        flex-wrap: nowrap;
+        margin: auto;
+        width: 300px;
+    }
+    .rated {
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px;
+        grid-template-rows: auto;
+        margin-left: 0px;
+        width: 300px;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .movil {
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+   
+    .rate_testimoni {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        margin-top: 1rem;
+        margin-left: 0px;
+        font-size: 14px;
+        
+    }
+
+    .testimonies {
+        flex-direction: column;
+        margin-top: 2rem;
+        
+        
+    } 
+    .testimoni {
+        width: 300px;
+        height: 250px;
+        margin: auto auto 1rem auto;
+        
+    }  
 }
